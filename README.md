@@ -17,11 +17,11 @@ This is an internship project to simulate phishing campaigns for **training and 
 
 ## Key Features
 
-- ✅ Create phishing email templates (custom content)
-- ✅ Generate simulation links
-- ✅ Log email clicks (email + timestamp)
-- ✅ Display analytics dashboard (click count per template)
-- ✅ Educate users after clicking (simulation landing page)
+- Create phishing email templates (custom content)
+- Generate simulation links
+- Log email clicks (email + timestamp)
+- Display analytics dashboard (click count per template)
+- Educate users after clicking (simulation landing page)
 
 ---
 
