@@ -1,0 +1,28 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Simulation Platform</title>
+</head>
+<body>
+    <h1>Create Phishing Template</h1>
+    <form method="POST" action="/create">
+        <input type="text" name="name" placeholder="Template Name" required><br><br>
+        <textarea name="content" placeholder="Phishing Email Content" rows="5" cols="40" required></textarea><br><br>
+        <button type="submit">Create Template</button>
+    </form>
+
+    <h2>Available Templates</h2>
+    <ul>
+        {% for t in templates %}
+        <li>
+            <b>{{ t[1] }}</b><br>
+            {{ t[2] }}<br>
+            <a href="/send/{{ t[0] }}">Generate Simulation Link</a>
+        </li><br>
+        {% endfor %}
+    </ul>
+
+    <a href="/analytics">📊 View Analytics</a>
+</body>
+</html>

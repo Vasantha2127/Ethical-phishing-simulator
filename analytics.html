@@ -1,0 +1,24 @@
+<!-- templates/analytics.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analytics</title>
+</head>
+<body>
+    <h1>Phishing Simulation Analytics</h1>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>Template ID</th>
+            <th>Click Count</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/">⬅ Back to Home</a>
+</body>
+</html>
