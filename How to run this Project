@@ -1,0 +1,23 @@
+How to Run the Project:
+To run this project locally:
+
+Clone the GitHub repository:
+git clone https://github.com/Vasantha2127/Ethical-phishing-simulator
+
+Navigate into the folder:
+cd ethical-phishing-simulator
+
+Install Flask:
+pip install flask
+
+Initialize the database:
+python models.py
+
+Start the Flask server:
+python app.py
+
+Open your browser and go to:
+http://localhost:5000
+
+The application will allow you to create phishing templates, simulate phishing links, log user clicks, and view analytics. Detailed instructions are available in the project's README.md file.
+
