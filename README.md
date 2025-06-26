@@ -8,11 +8,11 @@ This is an internship project to simulate phishing campaigns for **training and 
 
 ## Tech Stack
 
-- **Backend**: Flask (Python)
-- **Database**: SQLite
-- **Frontend**: HTML, CSS (basic)
-- **Optional**: Postfix or Gmail SMTP (to be added in next phase)
-
+1. **Create phishing campaigns** by entering email and custom message.
+2. **Generate phishing simulation links** for safe testing.
+3. **Track clicks** and timestamps for simulated phishing emails.
+4. **Analytics Dashboard** showing user interactions.
+5. **Awareness Page** educating users once they click the phishing link.
 ---
 
 ## Key Features
@@ -30,12 +30,15 @@ This is an internship project to simulate phishing campaigns for **training and 
 ### Step 1: Created Project Folder
 Created a folder named `phishing-sim` with the following structure:
 phishing-sim/
-├── app.py
-├── models.py
-├── database.db (auto-generated)
+├── app.py # Main Flask app
+├── models.py # Creates and initializes SQLite database
+├── requirements.txt # Python packages used
+├── database.db # Auto-generated SQLite DB file
 ├── templates/
-│ ├── index.html
-  └── analytics.html
+│ ├── index.html # Main UI for creating phishing campaigns
+│ ├── clicked.html # Displayed when a user clicks the phishing link
+│ └── analytics.html # View analytics of who clicked and when
+
 ### Step 2: Set Up the Project Environment
 - Installed Python 3.x and Flask using:
 
@@ -45,6 +48,11 @@ Created project folder: phishing-sim
 Made app.py for main Flask app
 
 Created models.py to set up the database
+
+Install Required Packages
+Make sure Python is installed. Then run:
+
+pip install -r requirements.txt
 
 ### Step 3: Created the Database
 In models.py, I wrote SQL to create:
